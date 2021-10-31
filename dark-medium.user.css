@@ -5,7 +5,7 @@
 @homepageURL  https://github.com/Phosphorus-M/Dark-medium/blob/main/dark-medium.user.css
 @supportURL   https://github.com/Phosphorus-M/Dark-medium/blob/main/dark-medium.user.css
 @author       Phosphorus
-@version      0.0.1
+@version      0.0.3
 
 ==/UserStyle== */
 @-moz-document domain("medium.com") {
@@ -39,7 +39,8 @@
     }
 
     /* Popup */
-    .bp {
+    .bp,
+    #root > div > div > div > div:nth-child(2) {
         background-color: #282a36 !important;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px !important;
     }
@@ -81,6 +82,7 @@
     .bb.b.or.os.bz.ot.ou.bx.s.kw {
         background-color: #333333;
     }
+    ul > li > code:not(.imposible),
     p > code:not(.imposible),
     p > mark > code:not(.imposible),
     .js.jt.ju.jv.jw.b {
@@ -94,6 +96,10 @@
     }
     section > div > div > blockquote:not(.imposible) p > mark {
         background-color: rgb(38 154 0 / 23%);
+    }
+    section > div > div > figure:not(.imposible) {
+        border: 0px;
+        background: transparent;
     }
     div:nth-child(2) div > button > svg > path,
     .wf path,
